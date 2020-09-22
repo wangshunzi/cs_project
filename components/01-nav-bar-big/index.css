@@ -213,6 +213,8 @@
 #nav-bar .content .bottom .right ul li .show-pane {
   width: 240px;
   border: 1px solid #ddd;
+  z-index: 998;
+  background-color: #fff;
   position: absolute;
   top: 40px;
   left: 50%;

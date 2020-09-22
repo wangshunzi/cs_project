@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小撩学堂(itlike.com)-Python,Java,H5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="keyword" content="全栈,大数据,人工智能,前端,后端,React,Vue,Node">
+    <meta name="description" content="撩课, 是一家致力于打造高质量课程的平台!圆您coding梦!">
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--引入首页对应的样式文件-->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!--1. 导航栏-->
+<div id="nav-bar">
+    <div class="content bx">
+        <div class="top">
+            <div class="left">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="center">
+                <form action="#">
+                    <div class="search-bar">
+                        <div class="s-category">
+                            <label>
+                                <select name="category" id="">
+                                    <option value="all">全部</option>
+                                    <option value="course">课程</option>
+                                    <option value="teacher">讲师</option>
+                                    <option value="article">文章</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="s-keyword">
+                            <label>
+                                <input type="text" name="key" placeholder="请输入搜索关键字...">
+                            </label>
+                        </div>
+                        <div class="s-btn">
+                            <input type="submit" value="&#xe621;&nbsp;搜索" class="iconfont">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <div class="intro">
+                    <div class="personal">
+                        <span class="p-name">注册/登录</span>
+                        <img class="p-header" src="assets/images/teacher.png" alt="">
+                        <div class="operation">
+                            <ul>
+                                <li>撩课-itlike.com</li>
+                                <li>我的学习</li>
+                                <li>设置</li>
+                                <li>退出</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <ul>
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">讲师</a></li>
+                    <li><a href="#">课程</a></li>
+                    <li><a href="#">文章</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="iconfont icon-V">
+                        欢迎领取福利
+
+                        <div class="show-pane">
+                            <p class="title">关注撩课公众号</p>
+                            <p class="intro">- 领取课程免费福利,超值学习资料 -</p>
+                            <img src="assets/images/ewm_lk.jpg" alt="">
+                        </div>
+
+                    </li>
+                    <li class="iconfont icon-xiaochengxu">
+                        微信小程序
+                        <div class="show-pane">
+                            <p class="title">关注撩课小程序</p>
+                            <p class="intro">- 领取课程免费福利,超值学习资料 -</p>
+                            <img src="assets/images/ewm_lk.jpg" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--2. 焦点图-->
+<div class="ad-focus">
+
+    <ul class="ad-images">
+        <li class="active"><a href="#"><img src="assets/images/banner1.png" alt=""></a></li>
+        <li><a href="#"><img src="assets/images/banner2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="assets/images/banner3.png" alt=""></a></li>
+    </ul>
+
+    <ul class="ad-titles">
+        <li class="active">标题1</li>
+        <li>标题2</li>
+        <li>标题3</li>
+    </ul>
+
+</div>
+
+<!--3. 热门好课-->
+<div class="section-container bx">
+    <div class="top">
+        <span class="title">- 热 . 门 . 好 . 课 -</span>
+        <a href="#">更多></a>
+    </div>
+    <div class="container">
+        <!--这个里面, 以后放各种各样的卡片盒子-->
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+        <div class="course-card">
+            <div class="top">
+                <a href="#">
+                    <img src="assets/images/course_img.png" alt="">
+                </a>
+                <span class="hot">
+            热门
+        </span>
+            </div>
+            <a href="#" class="course-title">课程名称</a>
+
+            <!--    10  5-->
+            <div class="score">
+                <div class="star">
+                    <div class="y-star" style="width:80%;"></div>
+                </div>
+                <span class="score-val">4分</span>
+            </div>
+            <span class="zan iconfont icon-icon_good">100好评</span>
+        </div>
+
+    </div>
+</div>
+
+
+<!--4. 明星讲师-->
+<div class="section-container bx">
+    <div class="top">
+        <span class="title">- 明 . 星 . 讲 . 师 -</span>
+        <a href="#">更多></a>
+    </div>
+    <div class="container">
+        <!--这个里面, 以后放各种各样的卡片盒子-->
+        <div class="teacher-card">
+            <div class="left">
+                <img class="t-header" src="assets/images/teacher.png" alt="">
+                <span class="t-name">金毛狮王</span>
+            </div>
+            <div class="right">
+                <h5 class="position">腾讯CTO</h5>
+                <p class="intro">技术大佬, 厉害的狠!大佬, 厉害的狠!技术大佬, 厉害的狠!</p>
+            </div>
+        </div>
+        <div class="teacher-card">
+            <div class="left">
+                <img class="t-header" src="assets/images/teacher.png" alt="">
+                <span class="t-name">金毛狮王</span>
+            </div>
+            <div class="right">
+                <h5 class="position">腾讯CTO</h5>
+                <p class="intro">技术大佬, 厉害的狠!大佬, 厉害的狠!技术大佬, 厉害的狠!</p>
+            </div>
+        </div>
+        <div class="teacher-card">
+            <div class="left">
+                <img class="t-header" src="assets/images/teacher.png" alt="">
+                <span class="t-name">金毛狮王</span>
+            </div>
+            <div class="right">
+                <h5 class="position">腾讯CTO</h5>
+                <p class="intro">技术大佬, 厉害的狠!大佬, 厉害的狠!技术大佬, 厉害的狠!</p>
+            </div>
+        </div>
+        <div class="teacher-card">
+            <div class="left">
+                <img class="t-header" src="assets/images/teacher.png" alt="">
+                <span class="t-name">金毛狮王</span>
+            </div>
+            <div class="right">
+                <h5 class="position">腾讯CTO</h5>
+                <p class="intro">技术大佬, 厉害的狠!大佬, 厉害的狠!技术大佬, 厉害的狠!</p>
+            </div>
+        </div>
+        <div class="teacher-card">
+            <div class="left">
+                <img class="t-header" src="assets/images/teacher.png" alt="">
+                <span class="t-name">金毛狮王</span>
+            </div>
+            <div class="right">
+                <h5 class="position">腾讯CTO</h5>
+                <p class="intro">技术大佬, 厉害的狠!大佬, 厉害的狠!技术大佬, 厉害的狠!</p>
+            </div>
+        </div>
+        <div class="teacher-card">
+            <div class="left">
+                <img class="t-header" src="assets/images/teacher.png" alt="">
+                <span class="t-name">金毛狮王</span>
+            </div>
+            <div class="right">
+                <h5 class="position">腾讯CTO</h5>
+                <p class="intro">技术大佬, 厉害的狠!大佬, 厉害的狠!技术大佬, 厉害的狠!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--5. 热门新闻-->
+<div class="section-container bx">
+    <div class="top">
+        <span class="title">- 热 . 门 . 新 . 闻 -</span>
+        <a href="#">更多></a>
+    </div>
+    <div class="container">
+        <!--这个里面, 以后放各种各样的卡片盒子-->
+        <div class="news-card">
+            <ul>
+                <li>
+                    <a href="#" class="news-title">新闻标题</a>
+                    <span class="news-time">2020年10月01日 12:12:12</span>
+                </li>
+                <li>
+                    <a href="#" class="news-title">新闻标题</a>
+                    <span class="news-time">2020年10月01日 12:12:12</span>
+                </li>
+                <li>
+                    <a href="#" class="news-title">新闻标题</a>
+                    <span class="news-time">2020年10月01日 12:12:12</span>
+                </li>
+                <li>
+                    <a href="#" class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</a>
+                    <span class="news-time">2020年10月01日 12:12:12</span>
+                </li>
+            </ul>
+        </div>
+        <div class="news-card">
+            <ul>
+                <li>
+                    <a href="#" class="news-title">新闻标题</a>
+                    <span class="news-time">2020年10月01日 12:12:12</span>
+                </li>
+                <li>
+                    <a href="#" class="news-title">新闻标题</a>
+                    <span class="news-time">2020年10月01日 12:12:12</span>
+                </li>
+                <li>
+                    <a href="#" class="news-title">新闻标题</a>
+                    <span class="news-time">2020年10月01日 12:12:12</span>
+                </li>
+                <li>
+                    <a href="#" class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</a>
+                    <span class="news-time">2020年10月01日 12:12:12</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--6. 底部-->
+<div id="footer">
+    <div class="container bx">
+        <div class="left">
+            <p class="f-intro">撩课云课堂 是掘智公司（itlike.com）旗下专注职业技能提升的在线学习平台。</p>
+            <ul class="f-link">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">撩课论坛</a></li>
+            </ul>
+            <p class="f-copyright">©2018-2020 课程内容版权均归 撩课教育 所有 沪ICP备18036896号</p>
+
+
+        </div>
+        <div class="right">
+            <div class="r-ad">
+                <div class="wb">
+                    <img class="ad-pane" src="assets/images/ewm_lk.jpg" alt="">
+                </div>
+                <div class="wx">
+                    <img class="ad-pane" src="assets/images/ewm_lk.jpg" alt="">
+                </div>
+            </div>
+            <p class="notice">客服热线 <span class="time">09:00-19:00</span></p>
+            <p class="tel">0554-66666666</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

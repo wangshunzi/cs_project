@@ -1,0 +1,33 @@
+.news-card {
+  width: 550px;
+  background-color: #fff;
+  &:hover {
+    box-shadow: 0 0 10px #ccc;
+  }
+  ul {
+    padding: 5px 10px;
+    li {
+      height: 40px;
+      //border: 1px solid cyan;
+      display: flex;
+      .news-title {
+        color: #333;
+        flex: 1;
+        line-height: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover {
+          color: #e1251b;
+        }
+      }
+      .news-time {
+        width: 200px;
+        color: #999;
+        //background-color: green;
+        text-align: right;
+        line-height: 40px;
+      }
+    }
+  }
+}
