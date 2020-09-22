@@ -1,0 +1,69 @@
+.ad-focus {
+  height: 420px;
+  background-color: orange;
+  position: relative;
+}
+.ad-focus .ad-images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ad-focus .ad-images li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1s linear;
+}
+.ad-focus .ad-images li.active {
+  opacity: 1;
+}
+.ad-focus .ad-images li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ad-focus .ad-images li a img {
+  width: 100%;
+  height: 100%;
+}
+.ad-focus .ad-titles {
+  width: 280px;
+  height: 380px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+.ad-focus .ad-titles li {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px 0 20px;
+  font-size: 16px;
+  color: #e0e0e0;
+  position: relative;
+  cursor: pointer;
+}
+.ad-focus .ad-titles li.active,
+.ad-focus .ad-titles li:hover {
+  color: #51b257;
+}
+.ad-focus .ad-titles li.active::before,
+.ad-focus .ad-titles li:hover::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-color: #51b257;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+/*# sourceMappingURL=index.css.map */

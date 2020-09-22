@@ -1,0 +1,19 @@
+@import "normalize.css";
+@import "//at.alicdn.com/t/font_1932323_urwtq2vtkxq.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.bx {
+  width: 1205px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=base.css.map */

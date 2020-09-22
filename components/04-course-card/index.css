@@ -1,0 +1,80 @@
+.course-card {
+  width: 218px;
+  height: 252px;
+  padding: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.course-card:hover {
+  box-shadow: 0 0 10px #ccc;
+}
+.course-card .top {
+  height: 130px;
+  background-color: darkcyan;
+  position: relative;
+  overflow: hidden;
+}
+.course-card .top:hover img {
+  transform: scale(1.5, 1.5);
+}
+.course-card .top a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.course-card .top a img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s linear;
+}
+.course-card .top .hot {
+  width: 48px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  background-image: url(assets/images/layout_css_sprites.png);
+  background-position: -16px -57px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+  top: 10px;
+  left: 0;
+}
+.course-card .course-title {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #333;
+  display: block;
+  height: 44px;
+  box-sizing: border-box;
+}
+.course-card .course-title:hover {
+  color: #e1251b;
+}
+.course-card .score {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.course-card .score .star {
+  width: 57px;
+  height: 10px;
+  background-image: url(assets/images/layout_css_sprites.png);
+  background-position: -91px -58px;
+}
+.course-card .score .star .y-star {
+  height: 10px;
+  background-image: url(assets/images/layout_css_sprites.png);
+  background-position: -10px -158px;
+}
+.course-card .score .score-val {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #666;
+}
+.course-card .zan {
+  font-size: 16px;
+  color: #666;
+}
+/*# sourceMappingURL=index.css.map */
