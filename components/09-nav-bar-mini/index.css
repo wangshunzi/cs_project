@@ -1,0 +1,194 @@
+#nav-bar-mini {
+  height: 60px;
+  background-image: url(assets/images/bg_nav_rep.png);
+  background-repeat: repeat-x;
+}
+#nav-bar-mini .content {
+  height: 60px;
+  display: flex;
+}
+#nav-bar-mini .content .left {
+  flex: 3;
+  display: flex;
+}
+#nav-bar-mini .content .left .logo {
+  width: 178px;
+}
+#nav-bar-mini .content .left .logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#nav-bar-mini .content .left .logo a img {
+  width: 100%;
+  height: 100%;
+}
+#nav-bar-mini .content .left .menu-items {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+#nav-bar-mini .content .left .menu-items li {
+  height: 60px;
+  position: relative;
+}
+#nav-bar-mini .content .left .menu-items li.active a,
+#nav-bar-mini .content .left .menu-items li:hover a {
+  color: #51b257;
+}
+#nav-bar-mini .content .left .menu-items li.active::before,
+#nav-bar-mini .content .left .menu-items li:hover::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #51b257;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#nav-bar-mini .content .left .menu-items li a {
+  height: 100%;
+  padding: 0 10px;
+  display: inline-block;
+  line-height: 60px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+#nav-bar-mini .content .center {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+#nav-bar-mini .content .center .search-bar {
+  background-color: #444;
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #999;
+  overflow: hidden;
+  display: flex;
+}
+#nav-bar-mini .content .center .search-bar .s-category {
+  flex: 3;
+}
+#nav-bar-mini .content .center .search-bar .s-category select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: transparent;
+}
+#nav-bar-mini .content .center .search-bar .s-category select option {
+  color: #666;
+}
+#nav-bar-mini .content .center .search-bar .s-keyword {
+  flex: 8;
+}
+#nav-bar-mini .content .center .search-bar .s-keyword input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  color: #666;
+  font-size: 14px;
+  background-color: transparent;
+}
+#nav-bar-mini .content .center .search-bar .s-btn {
+  flex: 2;
+}
+#nav-bar-mini .content .center .search-bar .s-btn input {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 13px;
+}
+#nav-bar-mini .content .right {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#nav-bar-mini .content .right .intro {
+  width: fit-content;
+  height: 50px;
+  float: right;
+}
+#nav-bar-mini .content .right .intro:hover .operation {
+  display: block !important;
+}
+#nav-bar-mini .content .right .intro .personal {
+  width: fit-content;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#nav-bar-mini .content .right .intro .personal .p-name {
+  color: #fff;
+  margin-right: 10px;
+}
+#nav-bar-mini .content .right .intro .personal .p-header {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+#nav-bar-mini .content .right .intro .personal .operation {
+  width: 160px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 10px #ddd;
+  z-index: 999;
+}
+#nav-bar-mini .content .right .intro .personal .operation::before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border: 10px solid transparent;
+  border-bottom-color: #ddd;
+  position: absolute;
+  right: 5px;
+  top: -21px;
+}
+#nav-bar-mini .content .right .intro .personal .operation ul {
+  color: #666;
+  font-size: 14px;
+}
+#nav-bar-mini .content .right .intro .personal .operation ul li {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+#nav-bar-mini .content .right .intro .personal .operation ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#nav-bar-mini .content .right .intro .personal .operation ul li:first-child {
+  border-bottom: 1px solid #ddd;
+}
+#nav-bar-mini .content .right .intro .personal .operation ul li:last-child {
+  border-top: 1px solid #ddd;
+}
+/*# sourceMappingURL=index.css.map */

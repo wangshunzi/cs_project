@@ -4,6 +4,59 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
+// 0. 浮动广告
+.ad-fixed {
+  width: 50px;
+  height: 200px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  .item {
+    width: 50px;
+    height: 50px;
+    //border: 1px solid red;
+    box-sizing: border-box;
+    &:first-child {
+      margin-bottom: 50px;
+      background-image: url(../assets/images/layout_css_sprites2.png);
+      background-position: -83px -174px;
+    }
+    &:nth-child(2) {
+      background-image: url(../assets/images/layout_css_sprites.png);
+      background-position: -4px -94px;
+      position: relative;
+      &:hover {
+        background-color: #ddd;
+        img {
+          display: block;
+        }
+      }
+      img {
+        width: 110px;
+        height: 110px;
+        border: 2px solid #ddd;
+        position: absolute;
+        top: 0;
+        right: 50px;
+        display: none;
+      }
+    }
+    &:last-child {
+      background-image: url(../assets/images/layout_css_sprites.png);
+      background-position: -166px 2px;
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+
 // 1. 导航栏对应的样式
 #nav-bar {
   height: 140px;

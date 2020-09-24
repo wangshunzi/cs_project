@@ -1,0 +1,40 @@
+@import "../../css/global";
+.category-bar {
+  height: 40px;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.04);
+  background: linear-gradient(#f7f6f8,#fff 20%);
+  .content {
+    //background-color: tomato;
+    height: 100%;
+    .filter-bar {
+      height: 100%;
+      //background-color: green;
+      display: flex;
+      align-items: center;
+      dt {
+        color: #949fab;
+        line-height: 40px;
+        margin-right: 15px;
+      }
+      dd {
+        height: 30px;
+        color: #6b6578;
+        padding: 0 10px;
+        line-height: 28px;
+        border: 1px solid transparent;
+        font-size: 14px;
+        box-sizing: border-box;
+        &.active {
+          color: @themeColor;
+          border-color: @themeColor;
+          border-radius: 15px;
+        }
+        &:hover {
+          color: @themeColor;
+          cursor: pointer;
+        }
+
+      }
+    }
+  }
+}

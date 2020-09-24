@@ -1,0 +1,72 @@
+.teacher-item {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  .top {
+    height: 80px;
+    display: flex;
+    .left {
+      flex: 1;
+      //background-color: tomato;
+      display: flex;
+      align-items: center;
+      .t-header {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border: 2px solid #ddd;
+        box-sizing: border-box;
+      }
+      .t-intro {
+        flex: 1;
+        //background-color: darkcyan;
+        .t-name-pane {
+          display: flex;
+          align-items: center;
+          .t-name {
+            font-size: 18px;
+            color: #424242;
+            margin-right: 15px;
+          }
+          .level {
+            font-size: 12px;
+            color: #a5571b;
+            background-color: #ffd2af;
+            padding: 0 2px;
+          }
+        }
+        .classes {
+          margin-top: 15px;
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .btn {
+        display: inline-block;
+        height: 34px;
+        line-height: 34px;
+        padding: 0 20px;
+        font-size: 14px;
+        color: #02a6e3;
+        border: 1px solid #02a6e3;
+        border-radius: 4px;
+      }
+    }
+  }
+  .bottom {
+    border-top: 1px solid #666;
+    padding: 10px 15px;
+    //background-color: cyan;
+    min-height: 40px;
+    font-size: 16px;
+    color: #666666;
+  }
+}

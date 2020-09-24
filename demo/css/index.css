@@ -1,6 +1,55 @@
 body {
   background-color: #f5f5f5;
 }
+.ad-fixed {
+  width: 50px;
+  height: 200px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ad-fixed .item {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.ad-fixed .item:first-child {
+  margin-bottom: 50px;
+  background-image: url(../assets/images/layout_css_sprites2.png);
+  background-position: -83px -174px;
+}
+.ad-fixed .item:nth-child(2) {
+  background-image: url(../assets/images/layout_css_sprites.png);
+  background-position: -4px -94px;
+  position: relative;
+}
+.ad-fixed .item:nth-child(2):hover {
+  background-color: #ddd;
+}
+.ad-fixed .item:nth-child(2):hover img {
+  display: block;
+}
+.ad-fixed .item:nth-child(2) img {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #ddd;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  display: none;
+}
+.ad-fixed .item:last-child {
+  background-image: url(../assets/images/layout_css_sprites.png);
+  background-position: -166px 2px;
+}
+.ad-fixed .item:last-child a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 #nav-bar {
   height: 140px;
   background-color: #fff;
